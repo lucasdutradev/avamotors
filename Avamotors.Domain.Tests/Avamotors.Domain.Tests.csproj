@@ -15,4 +15,9 @@
     <PackageReference Include="coverlet.collector" Version="3.1.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Avamotors.Domain\Avamotors.Domain.csproj" />
+    <ProjectReference Include="..\Avamotors.Domain.Shared\Avamotors.Domain.Shared.csproj" />
+  </ItemGroup>
+
 </Project>

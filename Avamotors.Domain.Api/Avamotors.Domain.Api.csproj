@@ -10,4 +10,10 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Avamotors.Domain\Avamotors.Domain.csproj" />
+    <ProjectReference Include="..\Avamotors.Domain.Infra\Avamotors.Domain.Infra.csproj" />
+    <ProjectReference Include="..\Avamotors.Domain.Shared\Avamotors.Domain.Shared.csproj" />
+  </ItemGroup>
+
 </Project>
