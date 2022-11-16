@@ -11,6 +11,8 @@ public class Seller : Entitie
 		Email = email;
 		Phone = phone;
 		Cpf = cpf;
+
+		AddNotifications(name, address, email, phone, cpf);
 	}
 
 	public Name Name { get; private set; }

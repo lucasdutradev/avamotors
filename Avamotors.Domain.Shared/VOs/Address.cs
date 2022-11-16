@@ -5,7 +5,7 @@ namespace Avamotors.Domain.Shared.VOs;
 
 public class Address : Notifiable<Notification>
 {
-	public Address(string cep, string street, string neighborhood, string city, string number, string complement)
+	public Address(string cep, string street, string neighborhood, string city, string number, string? complement)
 	{
 		Cep = cep;
 		Street = street;

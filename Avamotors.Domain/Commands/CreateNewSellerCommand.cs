@@ -46,7 +46,7 @@ public class CreateNewSellerCommand : Notifiable<Notification>, ICommand
 			.IsNotNullOrEmpty(City, "Cidade", "Cidade não pode estar vazia")
 			.IsNotNullOrEmpty(Number, "Numero", "Numero não pode estar vazio")
 			.IsEmail(Email, "E-mail", "Endereço de e-mail invalido.")
-			.AreEquals(Number, 11, "Telefone", "deve conter o numero juntamente com o DDD ao todo 11 digitos.")
+			.AreEquals(NumberPhone, 11, "Telefone", "deve conter o numero juntamente com o DDD ao todo 11 digitos.")
 			.AreEquals(CpfValidate.IsCpf(CPF), true, "cpf", "CPF Invalido")
 		);
 		return IsValid;
