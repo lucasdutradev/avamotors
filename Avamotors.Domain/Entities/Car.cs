@@ -4,7 +4,7 @@ namespace Avamotors.Domain.Entities;
 
 public class Car : Entitie
 {
-	public Car(Seller owner, double priceDay, Name name, string km, string year, string model, string description, string image, Client client)
+	public Car(Seller owner, double priceDay, Name name, double km, string year, string model, string description, string image, Client client)
 	{
 		Owner = owner;
 		PriceDay = priceDay;
@@ -20,7 +20,7 @@ public class Car : Entitie
 	public Seller Owner { get; private set; }
 	public double PriceDay { get; private set; }
 	public Name Name { get; private set; }
-	public string Km { get; private set; }
+	public double Km { get; private set; }
 	public string Year { get; private set; }
 	public string Model { get; private set; }
 	public string Description { get; private set; }
