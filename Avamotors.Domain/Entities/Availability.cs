@@ -12,9 +12,11 @@ public class Availability : Entitie
 	public DateTime Date { get; private set; }
 	public decimal PriceInThisDay { get; private set; }
 	public bool FilledDate { get; private set; }
+	public Client? Client { get; private set; }
 
-	public void checkData()
+	public void AddClient(Client client)
 	{
 		FilledDate = true;
+		Client = client;
 	}
 }

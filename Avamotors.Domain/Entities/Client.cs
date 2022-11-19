@@ -1,5 +1,4 @@
 using Avamotors.Domain.Shared.VOs;
-using Flunt.Validations;
 
 namespace Avamotors.Domain.Entities;
 
