@@ -29,6 +29,7 @@ public class Car : Entitie
 	public void AddCarASeller(Seller owner)
 	{
 		Owner = owner;
+		SellerId = owner.Id;
 
 	}
 	public void AddAvailability(DateTime date, decimal priceInThisDay)
