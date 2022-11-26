@@ -16,8 +16,8 @@ public class CarTest
 		var email = new Email("lucasbryan0217@gmail.com");
 		var phone = new Phone("17991846526");
 		var cpf = new Cpf("10695196693");
-		_owner = new Seller(name, address, email, phone, cpf);
-		_client = new Client(name, cpf, address, email, phone, "M");
+		_owner = new Seller(name, "aaa", email, phone, cpf);
+		_client = new Client(name, cpf, "aaa", email, phone, "M");
 	}
 
 	[TestMethod]
