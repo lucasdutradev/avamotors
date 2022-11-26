@@ -16,7 +16,6 @@ public class CarRepositories : ICarRepositories
 
 	public void Create(Car newCar, Seller seller)
 	{
-		newCar.AddCarASeller(seller);
 		_context.Car.Add(newCar);
 		_context.SaveChanges();
 	}

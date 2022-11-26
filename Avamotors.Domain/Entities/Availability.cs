@@ -4,11 +4,12 @@ public class Availability : Entitie
 {
 
 	public Availability() { }
-	public Availability(DateTime date, decimal priceInThisDay)
+	public Availability(DateTime date, decimal priceInThisDay, Guid carId)
 	{
 		Date = date;
 		PriceInThisDay = priceInThisDay;
 		FilledDate = false;
+		CarId = carId;
 	}
 
 	public DateTime Date { get; private set; }

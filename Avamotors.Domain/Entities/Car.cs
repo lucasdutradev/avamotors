@@ -38,7 +38,7 @@ public class Car : Entitie
 
 		if (existThisAvailability == null)
 		{
-			var newAvailability = new Availability(date, priceInThisDay);
+			var newAvailability = new Availability(date, priceInThisDay, Id);
 			_availabilitys.Add(newAvailability);
 		}
 	}

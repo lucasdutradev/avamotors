@@ -51,4 +51,9 @@ public class CreateNewSellerCommand : Notifiable<Notification>, ICommand
 		);
 		return IsValid;
 	}
+
+	public string AddressFormat()
+	{
+		return $"{Street}, {Number}, {Neighborhood} - {City}, {Complement ?? "Sem Complemento"}";
+	}
 }

@@ -21,6 +21,11 @@ public class SellerRepositories : ISellerRepositories
 		_context.SaveChanges();
 	}
 
+	public Seller GetById(Guid SellerId)
+	{
+		return _context.Seller.FirstOrDefault(x => x.Id == SellerId);
+	}
+
 	public void Update(Seller newSeller)
 	{
 		_context.Entry(newSeller).State = EntityState.Modified;

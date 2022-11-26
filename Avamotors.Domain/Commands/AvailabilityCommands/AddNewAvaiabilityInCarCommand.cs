@@ -4,9 +4,9 @@ using Flunt.Validations;
 
 namespace Avamotors.Domain.Commands;
 
-public class AddNewAvaiabilityInCarCommand : Notifiable<Notification>, ICommand
+public class AddNewAvailabilityInCarCommand : Notifiable<Notification>, ICommand
 {
-	public AddNewAvaiabilityInCarCommand(DateTime date, Guid carId, double priceInThisDay, bool filledDate)
+	public AddNewAvailabilityInCarCommand(DateTime date, Guid carId, decimal priceInThisDay, bool filledDate)
 	{
 		Date = date;
 		CarId = carId;
@@ -16,12 +16,11 @@ public class AddNewAvaiabilityInCarCommand : Notifiable<Notification>, ICommand
 
 	public DateTime Date { get; set; }
 	public Guid CarId { get; private set; }
-	public double PriceInThisDay { get; private set; }
+	public decimal PriceInThisDay { get; private set; }
 	public bool FilledDate { get; private set; }
 
 	public bool Validate()
 	{
-		AddNotifications(new Contract<AddNewAvaiabilityInCarCommand>().Requires());
 		return IsValid;
 	}
 }

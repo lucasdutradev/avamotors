@@ -6,4 +6,5 @@ public interface ISellerRepositories
 {
 	void Create(Seller newSeller);
 	void Update(Seller newSeller);
+	Seller GetById(Guid SellerId);
 }
